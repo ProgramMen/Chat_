@@ -7,9 +7,12 @@
     "start": "node server.js",
     "dev": "nodemon server"
   },
+   "engines": {
+    "node": "14.x"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sashafesyuk/chat.git"
+    "url": "git+https://github.com/ProgramMen/chat.git"
   },
   "keywords": [
     "NodeJS",
@@ -18,9 +21,9 @@
   "author": "Fesiuk Oleksandr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sashafesyuk/chat/issues"
+    "url": "https://github.com/ProgramMen/chat/issues"
   },
-  "homepage": "https://github.com/sashafesyuk/chat#readme",
+  "homepage": "https://github.com/ProgramMen/chat#readme",
   "dependencies": {
     "cookie": "^0.5.0",
     "crypto": "^1.0.1",
