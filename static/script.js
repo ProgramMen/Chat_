@@ -6,6 +6,12 @@ const socket = io({
 const messages = document.getElementById('messages');
 const form = document.getElementById('form');
 const input = document.getElementById('input');
+const logout = document.getElementById('logout');
+
+logout.addEventListener('click', (e) => {
+  document.cookie = 'token=; Max-Age=0';
+  location.assign('/login');
+});
 
 socket.on('all_messages', function(msgArray) {
   msgArray.forEach(msg => {
@@ -30,3 +36,13 @@ socket.on('message', function(msg) {
     messages.appendChild(item);
     window.scrollTo(0, document.body.scrollHeight);
 });
+let url = "https://api.weatherapi.com/v1/current.json?key=63ee929dc5124e97a8e171305231006&q=Kiev&aqi=no";
+let xhr = new XMLHttpRequest();
+xhr.responseType = "json";
+xhr.open("GET", url);
+xhr.send();
+let weth = "";
+xhr.onload = function(){
+  weth = xhr.response;
+  console.log(weth);
+};
