@@ -1,7 +1,7 @@
 const fs = require("fs");
 const crypto = require("crypto");
 
-
+// Шлях до файлу, у якому буде наша база даних
 const dbFile = "./chat.db";
 const exists = fs.existsSync(dbFile);
 const sqlite3 = require("sqlite3").verbose();
