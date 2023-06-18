@@ -1,0 +1,37 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server"
+  },
+   "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgramMen/chat.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Chat"
+  ],
+  "author": "Fesiuk Oleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProgramMen/chat/issues"
+  },
+  "homepage": "https://github.com/ProgramMen/chat#readme",
+  "dependencies": {
+    "cookie": "^0.5.0",
+    "crypto": "^1.0.1",
+    "socket.io": "^4.6.1",
+    "sqlite": "^4.2.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
